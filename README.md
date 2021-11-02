@@ -16,8 +16,10 @@
 ## 简介
 
 SSPanel UIM 是一款专为 Shadowsocks / ShadowsocksR / V2Ray / Trojan 设计的多用户管理面板，基于 ss-panel-v3-mod 开发。
-该项目为一键部署脚本，方便快捷部署。脚本开源无后门，欢迎star。
-更多信息请访问：https://github.com/Anankke/SSPanel-Uim.git
+
+###### 该项目为一键部署脚本，方便快捷部署。脚本开源无后门，欢迎star。
+
+###### 更多信息请访问：https://github.com/Anankke/SSPanel-Uim.git
 
 ## 特性
 
