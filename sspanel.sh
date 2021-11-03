@@ -35,6 +35,11 @@ while :; do echo
     [ -n "$Database_Password" ] && break
 done
 
+#获取主机内网ip
+ip="$(ifconfig|grep "inet "|awk '{print $2;exit;}')"
+#获取主机外网ip
+ips="$(curl ip.sb)"
+
 echo -e "\033[36m#######################################################################\033[0m"
 echo -e "\033[36m#                                                                     #\033[0m"
 echo -e "\033[36m#                    正在安装常用组件 请稍等~                         #\033[0m"
@@ -191,12 +196,6 @@ php xcat User createAdmin
 php xcat User resetTraffic
 # 下载 IP 地址库
 php xcat Tool initQQWry
-
-
-#获取主机内网ip
-ip="$(ifconfig|grep "inet "|awk '{print $2;exit;}')"
-#获取主机外网ip
-ips="$(curl ip.sb)"
 
 nginx -s reload
 echo $?="服务启动完成"
